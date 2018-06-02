@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Could not create web server listening on port 25555 pycurl: libcurl link-time ssl backend (openssl) is different from compile-time ssl backend (none/other)  参考文献 ##netstat、lsof查看端口 ###netstatnetstat用">
+<meta name="description" content="Could not create web server listening on port 25555 pycurl: libcurl link-time ssl backend (openssl) is different from compile-time ssl backend (none/other)  参考文献 netstat、lsof查看端口netstatnetstat用来查看系统当">
 <meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python3 PySpider 执行 pyspider all 遇到的问题">
 <meta property="og:url" content="http://yoursite.com/2018/06/02/Python3-PySpider-执行-pyspider-all-遇到的问题/index.html">
 <meta property="og:site_name" content="TMR De Blog">
-<meta property="og:description" content="Could not create web server listening on port 25555 pycurl: libcurl link-time ssl backend (openssl) is different from compile-time ssl backend (none/other)  参考文献 ##netstat、lsof查看端口 ###netstatnetstat用">
+<meta property="og:description" content="Could not create web server listening on port 25555 pycurl: libcurl link-time ssl backend (openssl) is different from compile-time ssl backend (none/other)  参考文献 netstat、lsof查看端口netstatnetstat用来查看系统当">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-02T02:18:37.199Z">
+<meta property="og:updated_time" content="2018-06-02T02:44:00.413Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python3 PySpider 执行 pyspider all 遇到的问题">
-<meta name="twitter:description" content="Could not create web server listening on port 25555 pycurl: libcurl link-time ssl backend (openssl) is different from compile-time ssl backend (none/other)  参考文献 ##netstat、lsof查看端口 ###netstatnetstat用">
+<meta name="twitter:description" content="Could not create web server listening on port 25555 pycurl: libcurl link-time ssl backend (openssl) is different from compile-time ssl backend (none/other)  参考文献 netstat、lsof查看端口netstatnetstat用来查看系统当">
 
 
 
@@ -305,8 +305,7 @@
 <li>pycurl: libcurl link-time ssl backend (openssl) is different from compile-time ssl backend (none/other)</li>
 </ol>
 <p><a href="https://www.zhihu.com/question/267901970" target="_blank" rel="noopener">参考文献</a></p>
-<p>##netstat、lsof查看端口</p>
-<p>###netstat<br>netstat用来查看系统当前系统网络状态信息，包括端口，连接情况等，常用方式如下：</p>
+<h2 id="netstat、lsof查看端口"><a href="#netstat、lsof查看端口" class="headerlink" title="netstat、lsof查看端口"></a>netstat、lsof查看端口</h2><h3 id="netstat"><a href="#netstat" class="headerlink" title="netstat"></a>netstat</h3><p>netstat用来查看系统当前系统网络状态信息，包括端口，连接情况等，常用方式如下：</p>
 <ul>
 <li>-t : 指明显示TCP端口</li>
 <li>-u : 指明显示UDP端口</li>
@@ -332,10 +331,9 @@
 <li>-v 显示版本信息</li>
 </ul>
 <p>lsof -i:22 #查看22端口连接情况，默认为sshd端口</p>
-<p>###解决第一个问题</p>
-<ol>
+<h3 id="解决第一个问题"><a href="#解决第一个问题" class="headerlink" title="解决第一个问题"></a>解决第一个问题</h3><ol>
 <li>使用lsof命令查看那条线程占用了25555端口</li>
-<li>执行kill命令杀掉那条线程 如： kill 15889<br>###解决第二个问题</li>
+<li>执行kill命令杀掉那条线程 如： kill 15889<h3 id="解决第二个问题"><a href="#解决第二个问题" class="headerlink" title="解决第二个问题"></a>解决第二个问题</h3></li>
 <li>pip3 uninstall pycurl</li>
 <li>export PYCURL_SSL_LIBRARY=openssl</li>
 <li>export LDFLAGS=-L/usr/local/opt/openssl/lib</li>
@@ -507,7 +505,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#lsof"><span class="nav-number">1.</span> <span class="nav-text">lsof</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#netstat、lsof查看端口"><span class="nav-number">1.</span> <span class="nav-text">netstat、lsof查看端口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#netstat"><span class="nav-number">1.1.</span> <span class="nav-text">netstat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lsof"><span class="nav-number">1.2.</span> <span class="nav-text">lsof</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决第一个问题"><span class="nav-number">1.3.</span> <span class="nav-text">解决第一个问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决第二个问题"><span class="nav-number">1.4.</span> <span class="nav-text">解决第二个问题</span></a></li></ol></li></ol></div>
             
 
           </div>
