@@ -79,26 +79,18 @@
 
 
 
-<meta name="description" content="应用场景在开发中总有一些情况，我们按照设计出的图画好了，准备调接口。然后发现后台只做了接口的字段定义，具体的数据内容并没有返回给我们。这时候又需要接口为我们提供内容做一些网络或者逻辑的调试，我们不能干等着后台给我们提供数据啊。现在我们就可以用Charles拦截请求，Mocky模拟后台数据返回给我们。 Charles的使用如下图勾选上 macOS Proxy，这样Charles就能获取所有通过你的电">
+<meta name="description" content="网上有很多介绍输入限制的文章原理请参看这篇文章，我只是做了一个简单的封装而已 这里可以贴出全部代码 12345#import &amp;lt;UIKit/UIKit.h&amp;gt;@interface UITextField (TMRInputLimit)- (void)inputLimitWithMaxLength:(NSInteger)maxLength;@end 12345678910111213141">
 <meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Charles + Mokcy 模拟后台返回数据">
-<meta property="og:url" content="http://yoursite.com/2018/06/02/Charles-+-Mokcy-模拟后台返回数据/index.html">
+<meta property="og:title" content="一行代码搞定TextField输入限制">
+<meta property="og:url" content="http://yoursite.com/2018/06/02/TextField-一行代码搞定输入限制的副本/index.html">
 <meta property="og:site_name" content="TMR De Blog">
-<meta property="og:description" content="应用场景在开发中总有一些情况，我们按照设计出的图画好了，准备调接口。然后发现后台只做了接口的字段定义，具体的数据内容并没有返回给我们。这时候又需要接口为我们提供内容做一些网络或者逻辑的调试，我们不能干等着后台给我们提供数据啊。现在我们就可以用Charles拦截请求，Mocky模拟后台数据返回给我们。 Charles的使用如下图勾选上 macOS Proxy，这样Charles就能获取所有通过你的电">
+<meta property="og:description" content="网上有很多介绍输入限制的文章原理请参看这篇文章，我只是做了一个简单的封装而已 这里可以贴出全部代码 12345#import &amp;lt;UIKit/UIKit.h&amp;gt;@interface UITextField (TMRInputLimit)- (void)inputLimitWithMaxLength:(NSInteger)maxLength;@end 12345678910111213141">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-3e1f4d40edff36a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-a0f0485191ab92fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-ff77429f01688a41.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-9fbff2c04b897ca7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-693eacfb9e4166e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-f52c4db6ea2bb9cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-9fbff2c04b897ca7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-06-02T02:53:35.108Z">
+<meta property="og:updated_time" content="2018-06-02T02:53:35.109Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Charles + Mokcy 模拟后台返回数据">
-<meta name="twitter:description" content="应用场景在开发中总有一些情况，我们按照设计出的图画好了，准备调接口。然后发现后台只做了接口的字段定义，具体的数据内容并没有返回给我们。这时候又需要接口为我们提供内容做一些网络或者逻辑的调试，我们不能干等着后台给我们提供数据啊。现在我们就可以用Charles拦截请求，Mocky模拟后台数据返回给我们。 Charles的使用如下图勾选上 macOS Proxy，这样Charles就能获取所有通过你的电">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/2067180-3e1f4d40edff36a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="一行代码搞定TextField输入限制">
+<meta name="twitter:description" content="网上有很多介绍输入限制的文章原理请参看这篇文章，我只是做了一个简单的封装而已 这里可以贴出全部代码 12345#import &amp;lt;UIKit/UIKit.h&amp;gt;@interface UITextField (TMRInputLimit)- (void)inputLimitWithMaxLength:(NSInteger)maxLength;@end 12345678910111213141">
 
 
 
@@ -128,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/02/Charles-+-Mokcy-模拟后台返回数据/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/02/TextField-一行代码搞定输入限制的副本/"/>
 
 
 
 
 
-  <title>Charles + Mokcy 模拟后台返回数据 | TMR De Blog</title>
+  <title>一行代码搞定TextField输入限制 | TMR De Blog</title>
   
 
 
@@ -241,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/02/Charles-+-Mokcy-模拟后台返回数据/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/02/TextField-一行代码搞定输入限制的副本/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="塔米尔">
@@ -258,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Charles + Mokcy 模拟后台返回数据</h1>
+          <h1 class="post-title" itemprop="name headline">一行代码搞定TextField输入限制</h1>
         
 
         <div class="post-meta">
@@ -308,24 +300,12 @@
       
 
       
-        <h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><p>在开发中总有一些情况，我们按照设计出的图画好了，准备调接口。然后发现后台只做了接口的字段定义，具体的数据内容并没有返回给我们。这时候又需要接口为我们提供内容做一些网络或者逻辑的调试，我们不能干等着后台给我们提供数据啊。现在我们就可以用Charles拦截请求，Mocky模拟后台数据返回给我们。</p>
-<h2 id="Charles的使用"><a href="#Charles的使用" class="headerlink" title="Charles的使用"></a>Charles的使用</h2><p>如下图勾选上 macOS Proxy，这样Charles就能获取所有通过你的电脑发出的网络请求了<br><img src="https://upload-images.jianshu.io/upload_images/2067180-3e1f4d40edff36a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>抓到的数据<br><img src="https://upload-images.jianshu.io/upload_images/2067180-a0f0485191ab92fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<h3 id="通过Charles的的Map功能重定向到用Mokcy模拟的地址"><a href="#通过Charles的的Map功能重定向到用Mokcy模拟的地址" class="headerlink" title="通过Charles的的Map功能重定向到用Mokcy模拟的地址"></a>通过Charles的的Map功能重定向到用Mokcy模拟的地址</h3><p>右键你的接口选择Map Remote<br><img src="https://upload-images.jianshu.io/upload_images/2067180-ff77429f01688a41.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>填写相关信息<br><img src="https://upload-images.jianshu.io/upload_images/2067180-9fbff2c04b897ca7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>具体填写，请接着往下看</p>
-<h2 id="Mocky模拟数据"><a href="#Mocky模拟数据" class="headerlink" title="Mocky模拟数据"></a>Mocky模拟数据</h2><p>Mocky网址<a href="https://www.mocky.io/" target="_blank" rel="noopener">https://www.mocky.io/</a></p>
-<h3 id="Mcoky的使用"><a href="#Mcoky的使用" class="headerlink" title="Mcoky的使用"></a>Mcoky的使用</h3><p><img src="https://upload-images.jianshu.io/upload_images/2067180-693eacfb9e4166e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<ol>
-<li>Status Code 和 Content Type如图填就行了</li>
-<li>Custom headers 请求时所带的参数，多个参数就点Switch to basic mode 哪个按钮添加</li>
-<li>在Body 中构建你自己的JSON</li>
-<li>点击Generate my HTTP Response生成如下链接</li>
-</ol>
-<p><img src="https://upload-images.jianshu.io/upload_images/2067180-f52c4db6ea2bb9cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="生成的链接"><br>回到Charles的重定向界面<br><img src="https://upload-images.jianshu.io/upload_images/2067180-9fbff2c04b897ca7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<ol>
-<li>protocol根据具体情况填写</li>
-<li>Host填写<a href="http://www.mokcy.io" target="_blank" rel="noopener">www.mokcy.io</a></li>
-<li>path填写mokcy生成的地址</li>
-<li>Query带参数请求才填，同Map From下面的Query</li>
-</ol>
+        <p>网上有很多介绍输入限制的文章<br>原理请参看<a href="http://www.jianshu.com/p/2d1c06f2dfa4" target="_blank" rel="noopener">这篇文章</a>，我只是做了一个简单的封装而已</p>
+<p>这里可以贴出全部代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#import &lt;UIKit/UIKit.h&gt;</span><br><span class="line"></span><br><span class="line">@interface UITextField (TMRInputLimit)</span><br><span class="line">- (void)inputLimitWithMaxLength:(NSInteger)maxLength;</span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">#import &quot;UITextField+TMRInputLimit.h&quot;</span><br><span class="line">#import &lt;objc/runtime.h&gt;</span><br><span class="line">@interface UITextField ()</span><br><span class="line">@property (assign, nonatomic) NSNumber *maxLength;</span><br><span class="line">@end</span><br><span class="line">@implementation UITextField (TMRInputLimit)</span><br><span class="line"></span><br><span class="line">- (void)setMaxLength:(NSNumber *)maxLength</span><br><span class="line">&#123;</span><br><span class="line">    objc_setAssociatedObject(self, @selector(maxLength), maxLength, OBJC_ASSOCIATION_ASSIGN);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (NSNumber *)maxLength</span><br><span class="line">&#123;</span><br><span class="line">    return objc_getAssociatedObject(self, @selector(maxLength));</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (void)inputLimitWithMaxLength:(NSInteger)maxLength</span><br><span class="line">&#123;</span><br><span class="line">    self.maxLength = [NSNumber numberWithInteger:maxLength];</span><br><span class="line">    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldEditChanged:) name:@&quot;UITextFieldTextDidChangeNotification&quot; object:self];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (void)textFieldEditChanged:(NSNotification *)obj</span><br><span class="line">&#123;</span><br><span class="line">    NSInteger maxLength = [self.maxLength integerValue];</span><br><span class="line">    UITextField *field = (UITextField *)obj.object;</span><br><span class="line">    NSString *toBeString = field.text;</span><br><span class="line">    UITextRange *selectedRange = [field markedTextRange];</span><br><span class="line">    UITextPosition *position = [field positionFromPosition:selectedRange.start offset:0];</span><br><span class="line">    if (!position || !selectedRange)</span><br><span class="line">    &#123;</span><br><span class="line">        if (toBeString.length &gt; maxLength)</span><br><span class="line">        &#123;</span><br><span class="line">            NSRange rangeIndex = [toBeString rangeOfComposedCharacterSequenceAtIndex:maxLength];</span><br><span class="line">            if (rangeIndex.length == 1)</span><br><span class="line">            &#123;</span><br><span class="line">                field.text = [toBeString substringToIndex:maxLength];</span><br><span class="line">            &#125;</span><br><span class="line">            else</span><br><span class="line">            &#123;</span><br><span class="line">                NSRange rangeRange = [toBeString rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, maxLength)];</span><br><span class="line">                field.text = [toBeString substringWithRange:rangeRange];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (void)dealloc</span><br><span class="line">&#123;</span><br><span class="line">    [[NSNotificationCenter defaultCenter] removeObserver:self name:@&quot;UITextFieldTextDidChangeNotification&quot; object:self];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
+<p>使用时import这个分类</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[_textField inputLimitWithMaxLength:6];</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -350,8 +330,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/02/Python3-PySpider-执行-pyspider-all-遇到的问题/" rel="next" title="Python3 PySpider 执行 pyspider all 遇到的问题">
-                <i class="fa fa-chevron-left"></i> Python3 PySpider 执行 pyspider all 遇到的问题
+              <a href="/2018/06/02/Charles-+-Mokcy-模拟后台返回数据/" rel="next" title="Charles + Mokcy 模拟后台返回数据">
+                <i class="fa fa-chevron-left"></i> Charles + Mokcy 模拟后台返回数据
               </a>
             
           </div>
@@ -360,7 +340,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/02/TextField-一行代码搞定输入限制的副本/" rel="prev" title="一行代码搞定TextField输入限制">
+              <a href="/2018/06/02/TextField-一行代码搞定输入限制/" rel="prev" title="一行代码搞定TextField输入限制">
                 一行代码搞定TextField输入限制 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -414,17 +394,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -480,22 +451,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#应用场景"><span class="nav-number">1.</span> <span class="nav-text">应用场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Charles的使用"><span class="nav-number">2.</span> <span class="nav-text">Charles的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#通过Charles的的Map功能重定向到用Mokcy模拟的地址"><span class="nav-number">2.1.</span> <span class="nav-text">通过Charles的的Map功能重定向到用Mokcy模拟的地址</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mocky模拟数据"><span class="nav-number">3.</span> <span class="nav-text">Mocky模拟数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mcoky的使用"><span class="nav-number">3.1.</span> <span class="nav-text">Mcoky的使用</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
