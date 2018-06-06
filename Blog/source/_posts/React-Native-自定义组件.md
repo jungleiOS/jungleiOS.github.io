@@ -1,5 +1,6 @@
 ---
 title: React Native 自定义组件
+date: 2017.04.02 01:04
 ---
 ### ES6语法
 
