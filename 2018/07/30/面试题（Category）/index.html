@@ -79,26 +79,18 @@
 
 
 
-<meta name="description" content="应用场景在开发中总有一些情况，我们按照设计出的图画好了，准备调接口。然后发现后台只做了接口的字段定义，具体的数据内容并没有返回给我们。这时候又需要接口为我们提供内容做一些网络或者逻辑的调试，我们不能干等着后台给我们提供数据啊。现在我们就可以用Charles拦截请求，Mocky模拟后台数据返回给我们。 Charles的使用如下图勾选上 macOS Proxy，这样Charles就能获取所有通过你的电">
+<meta name="description" content="分类（Category）和扩展（Extension）有什么区别？ 分别用来做什么？ 分类的局限性？ 分类的结构体有哪些成员？ 答案参考链接：Category VS Extension 原理详解   他们的作用：Category 可以减少单个文件的体积 把不同功能组织到不同的Category里 可以由多个开发者共同完成一个类 可以按需加载想要的category 声明私有方法 模拟多继承（一定要搞懂">
 <meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Charles + Mokcy 模拟后台返回数据">
-<meta property="og:url" content="http://yoursite.com/2018/05/08/Charles-+-Mokcy-模拟后台返回数据/index.html">
+<meta property="og:title" content="面试题（Category）">
+<meta property="og:url" content="http://yoursite.com/2018/07/30/面试题（Category）/index.html">
 <meta property="og:site_name" content="TMR De Blog">
-<meta property="og:description" content="应用场景在开发中总有一些情况，我们按照设计出的图画好了，准备调接口。然后发现后台只做了接口的字段定义，具体的数据内容并没有返回给我们。这时候又需要接口为我们提供内容做一些网络或者逻辑的调试，我们不能干等着后台给我们提供数据啊。现在我们就可以用Charles拦截请求，Mocky模拟后台数据返回给我们。 Charles的使用如下图勾选上 macOS Proxy，这样Charles就能获取所有通过你的电">
+<meta property="og:description" content="分类（Category）和扩展（Extension）有什么区别？ 分别用来做什么？ 分类的局限性？ 分类的结构体有哪些成员？ 答案参考链接：Category VS Extension 原理详解   他们的作用：Category 可以减少单个文件的体积 把不同功能组织到不同的Category里 可以由多个开发者共同完成一个类 可以按需加载想要的category 声明私有方法 模拟多继承（一定要搞懂">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-3e1f4d40edff36a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-a0f0485191ab92fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-ff77429f01688a41.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-9fbff2c04b897ca7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-693eacfb9e4166e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-f52c4db6ea2bb9cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2067180-9fbff2c04b897ca7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-06-21T01:20:00.957Z">
+<meta property="og:updated_time" content="2018-07-30T04:54:06.555Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Charles + Mokcy 模拟后台返回数据">
-<meta name="twitter:description" content="应用场景在开发中总有一些情况，我们按照设计出的图画好了，准备调接口。然后发现后台只做了接口的字段定义，具体的数据内容并没有返回给我们。这时候又需要接口为我们提供内容做一些网络或者逻辑的调试，我们不能干等着后台给我们提供数据啊。现在我们就可以用Charles拦截请求，Mocky模拟后台数据返回给我们。 Charles的使用如下图勾选上 macOS Proxy，这样Charles就能获取所有通过你的电">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/2067180-3e1f4d40edff36a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="面试题（Category）">
+<meta name="twitter:description" content="分类（Category）和扩展（Extension）有什么区别？ 分别用来做什么？ 分类的局限性？ 分类的结构体有哪些成员？ 答案参考链接：Category VS Extension 原理详解   他们的作用：Category 可以减少单个文件的体积 把不同功能组织到不同的Category里 可以由多个开发者共同完成一个类 可以按需加载想要的category 声明私有方法 模拟多继承（一定要搞懂">
 
 
 
@@ -128,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/08/Charles-+-Mokcy-模拟后台返回数据/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/30/面试题（Category）/"/>
 
 
 
 
 
-  <title>Charles + Mokcy 模拟后台返回数据 | TMR De Blog</title>
+  <title>面试题（Category） | TMR De Blog</title>
   
 
 
@@ -241,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/08/Charles-+-Mokcy-模拟后台返回数据/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/30/面试题（Category）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="塔米尔">
@@ -258,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Charles + Mokcy 模拟后台返回数据</h1>
+          <h1 class="post-title" itemprop="name headline">面试题（Category）</h1>
         
 
         <div class="post-meta">
@@ -270,8 +262,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-08T00:00:00+08:00">
-                2018-05-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-30T00:00:00+08:00">
+                2018-07-30
               </time>
             
 
@@ -308,24 +300,49 @@
       
 
       
-        <h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><p>在开发中总有一些情况，我们按照设计出的图画好了，准备调接口。然后发现后台只做了接口的字段定义，具体的数据内容并没有返回给我们。这时候又需要接口为我们提供内容做一些网络或者逻辑的调试，我们不能干等着后台给我们提供数据啊。现在我们就可以用Charles拦截请求，Mocky模拟后台数据返回给我们。</p>
-<h2 id="Charles的使用"><a href="#Charles的使用" class="headerlink" title="Charles的使用"></a>Charles的使用</h2><p>如下图勾选上 macOS Proxy，这样Charles就能获取所有通过你的电脑发出的网络请求了<br><img src="https://upload-images.jianshu.io/upload_images/2067180-3e1f4d40edff36a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>抓到的数据<br><img src="https://upload-images.jianshu.io/upload_images/2067180-a0f0485191ab92fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<h3 id="通过Charles的的Map功能重定向到用Mokcy模拟的地址"><a href="#通过Charles的的Map功能重定向到用Mokcy模拟的地址" class="headerlink" title="通过Charles的的Map功能重定向到用Mokcy模拟的地址"></a>通过Charles的的Map功能重定向到用Mokcy模拟的地址</h3><p>右键你的接口选择Map Remote<br><img src="https://upload-images.jianshu.io/upload_images/2067180-ff77429f01688a41.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>填写相关信息<br><img src="https://upload-images.jianshu.io/upload_images/2067180-9fbff2c04b897ca7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>具体填写，请接着往下看</p>
-<h2 id="Mocky模拟数据"><a href="#Mocky模拟数据" class="headerlink" title="Mocky模拟数据"></a>Mocky模拟数据</h2><p>Mocky网址<a href="https://www.mocky.io/" target="_blank" rel="noopener">https://www.mocky.io/</a></p>
-<h3 id="Mcoky的使用"><a href="#Mcoky的使用" class="headerlink" title="Mcoky的使用"></a>Mcoky的使用</h3><p><img src="https://upload-images.jianshu.io/upload_images/2067180-693eacfb9e4166e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<ol>
-<li>Status Code 和 Content Type如图填就行了</li>
-<li>Custom headers 请求时所带的参数，多个参数就点Switch to basic mode 哪个按钮添加</li>
-<li>在Body 中构建你自己的JSON</li>
-<li>点击Generate my HTTP Response生成如下链接</li>
-</ol>
-<p><img src="https://upload-images.jianshu.io/upload_images/2067180-f52c4db6ea2bb9cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="生成的链接"><br>回到Charles的重定向界面<br><img src="https://upload-images.jianshu.io/upload_images/2067180-9fbff2c04b897ca7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<ol>
-<li>protocol根据具体情况填写</li>
-<li>Host填写<a href="http://www.mokcy.io" target="_blank" rel="noopener">www.mokcy.io</a></li>
-<li>path填写mokcy生成的地址</li>
-<li>Query带参数请求才填，同Map From下面的Query</li>
-</ol>
+        <ul>
+<li>分类（Category）和扩展（Extension）有什么区别？</li>
+<li>分别用来做什么？</li>
+<li>分类的局限性？</li>
+<li><p>分类的结构体有哪些成员？</p>
+<p>答案参考链接：<a href="http://www.cocoachina.com/ios/20170502/19163.html" target="_blank" rel="noopener">Category VS Extension 原理详解</a></p>
+</li>
+</ul>
+<h3 id="他们的作用："><a href="#他们的作用：" class="headerlink" title="他们的作用："></a>他们的作用：</h3><h4 id="Category"><a href="#Category" class="headerlink" title="Category"></a>Category</h4><ul>
+<li>可以减少单个文件的体积</li>
+<li>把不同功能组织到不同的Category里</li>
+<li>可以由多个开发者共同完成一个类</li>
+<li>可以按需加载想要的category</li>
+<li>声明私有方法</li>
+<li>模拟多继承（一定要搞懂多继承概念）</li>
+<li>把framework的私有方法公开（先了解framework😢）</li>
+</ul>
+<h4 id="Extension"><a href="#Extension" class="headerlink" title="Extension"></a>Extension</h4><ul>
+<li>Extension可以添加属性和方法，且方法必须实现</li>
+<li>隐藏私有信息</li>
+</ul>
+<h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3><ul>
+<li>extension在编译器决议，属于类的一部分，category在运行时决议</li>
+<li>extension必须在有一个类的源码时才能添加，category不需要有类的源码</li>
+<li>extension可以添加实例变量，category不可以</li>
+</ul>
+<h3 id="Category-结构体-category-t"><a href="#Category-结构体-category-t" class="headerlink" title="Category 结构体 category_t"></a>Category 结构体 category_t</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">struct category_t &#123;</span><br><span class="line">    const char *name;</span><br><span class="line">    classref_t cls;</span><br><span class="line">    struct method_list_t *instanceMethods; // 对象方法</span><br><span class="line">    struct method_list_t *classMethods; // 类方法</span><br><span class="line">    struct protocol_list_t *protocols; // 协议</span><br><span class="line">    struct property_list_t *instanceProperties; // 属性</span><br><span class="line">    // Fields below this point are not always present on disk.</span><br><span class="line">    struct property_list_t *_classProperties;</span><br><span class="line"></span><br><span class="line">    method_list_t *methodsForMeta(bool isMeta) &#123;</span><br><span class="line">        if (isMeta) return classMethods;</span><br><span class="line">        else return instanceMethods;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    property_list_t *propertiesForMeta(bool isMeta, struct header_info *hi);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>问： Category的实现原理，以及Category为什么只能加方法不能加属性?</p>
+<blockquote>
+<p>答：分类的实现原理是将category中的方法，属性，协议数据放在category_t结构体中，然后将结构体内的方法列表拷贝到类对象的方法列表中。 Category可以添加属性，但是并不会自动生成成员变量及set/get方法。因为category_t结构体中并不存在成员变量。通过之前对对象的分析我们知道成员变量是存放在实例对象中的，并且编译的那一刻就已经决定好了。而分类是在运行时才去加载的。那么我们就无法再程序运行时将分类的成员变量中添加到实例对象的结构体中。因此分类中不可以添加成员变量。</p>
+</blockquote>
+<p>问：Category中有load方法吗？load方法是什么时候调用的？load 方法能继承吗？</p>
+<blockquote>
+<p>答：Category中有load方法，load方法在程序启动装载类信息的时候就会调用。load方法可以继承。调用子类的load方法之前，会先调用父类的load方法</p>
+</blockquote>
+<p>问：load、initialize的区别，以及它们在category重写的时候的调用的次序。</p>
+<blockquote>
+<p>答：区别在于调用方式和调用时刻 调用方式：load是根据函数地址直接调用，initialize是通过objc_msgSend调用 调用时刻：load是runtime加载类、分类的时候调用（只会调用1次），initialize是类第一次接收到消息的时候调用，每一个类只会initialize一次（父类的initialize方法可能会被调用多次）</p>
+</blockquote>
+<blockquote>
+<p>调用顺序：先调用类的load方法，先编译那个类，就先调用load。在调用load之前会先调用父类的load方法。分类中load方法不会覆盖本类的load方法，先编译的分类优先调用load方法。initialize先初始化父类，之后再初始化子类。如果子类没有实现+initialize，会调用父类的+initialize（所以父类的+initialize可能会被调用多次），如果分类实现了+initialize，就覆盖类本身的+initialize调用。</p>
+</blockquote>
+<p>作者：xx_cc<br>链接：<a href="https://juejin.im/post/5aef0a3b518825670f7bc0f3" target="_blank" rel="noopener">https://juejin.im/post/5aef0a3b518825670f7bc0f3</a></p>
 
       
     </div>
@@ -350,8 +367,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/08/TextField-一行代码搞定输入限制/" rel="next" title="一行代码搞定TextField输入限制">
-                <i class="fa fa-chevron-left"></i> 一行代码搞定TextField输入限制
+              <a href="/2018/06/21/git 本地仓库和远程仓库相关联/" rel="next" title="git 本地仓库和远程仓库相关联">
+                <i class="fa fa-chevron-left"></i> git 本地仓库和远程仓库相关联
               </a>
             
           </div>
@@ -359,10 +376,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/28/Python3-PySpider-执行-pyspider-all-遇到的问题/" rel="prev" title="Python3 PySpider 执行 pyspider all 遇到的问题">
-                Python3 PySpider 执行 pyspider all 遇到的问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -490,7 +503,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#应用场景"><span class="nav-number">1.</span> <span class="nav-text">应用场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Charles的使用"><span class="nav-number">2.</span> <span class="nav-text">Charles的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#通过Charles的的Map功能重定向到用Mokcy模拟的地址"><span class="nav-number">2.1.</span> <span class="nav-text">通过Charles的的Map功能重定向到用Mokcy模拟的地址</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mocky模拟数据"><span class="nav-number">3.</span> <span class="nav-text">Mocky模拟数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mcoky的使用"><span class="nav-number">3.1.</span> <span class="nav-text">Mcoky的使用</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#他们的作用："><span class="nav-number">1.</span> <span class="nav-text">他们的作用：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Category"><span class="nav-number">1.1.</span> <span class="nav-text">Category</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Extension"><span class="nav-number">1.2.</span> <span class="nav-text">Extension</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#区别"><span class="nav-number">2.</span> <span class="nav-text">区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Category-结构体-category-t"><span class="nav-number">3.</span> <span class="nav-text">Category 结构体 category_t</span></a></li></ol></div>
             
 
           </div>
